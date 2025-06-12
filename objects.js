@@ -36,10 +36,10 @@ const  {developer} = developer
 
 console.log(developer);
 
-{
-    "coursename" :"jx",
-    "price" :"900",
-    "developer" : "aaman"
-}
+// {
+//     "coursename" :"jx",
+//     "price" :"900",
+//     "developer" : "aaman"
+// }
 
 
