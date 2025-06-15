@@ -30,3 +30,10 @@ const newss =  (num1, num2)=> (num1 + num2)
 
 console.log(news(45 ,45))
 console.log(newss(45 ,45))
+
+
+function aman(){
+    console.log("db")
+}
+
+aman()
