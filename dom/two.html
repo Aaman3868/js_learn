@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body style="background-color: #212121; color: antiquewhite;">
+
+    <class class="parent">
+        <div class="class day">mon</div>
+        <div class="class day">tue</div>
+        <div class="class day">wed</div>
+        <div class="class day">sat</div>
+    </class>
+    
+</body>
+<script>
+   const parents =  document.querySelector('.parent')
+//    console.log(parents)
+//    console.log(parents.children)
+//    console.log(parents.children[1].innerHTML)
+
+for(let i = 0; i<parents.children.length;i++){
+    console.log(parents.children[i].innerHTML)
+}
+
+parents.children[1].style.color = "orange";
+</script>
+
+</html>
