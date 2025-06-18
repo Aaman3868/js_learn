@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="images">
+<li><img src="https://picsum.photos/id/1011/200/150" id="img1"  alt="Forest Landscape"></li>
+  <li><img src="https://picsum.photos/id/1025/200/150" id="img2" alt="Dog Portrait"></li>
+  <li><img src="https://picsum.photos/id/1043/200/150" id="img3" alt="Mountains"></li>
+  <li><img src="https://picsum.photos/id/1062/200/150" id="img4" alt="Urban Street"></li>
+  <li><img src="https://picsum.photos/id/1069/200/150" id="img5" alt="Beach View"></li>
+  <li><img src="https://picsum.photos/id/1080/200/150" id="img6" alt="Desert Road"></li>
+  <li><img src="https://picsum.photos/id/1084/200/150" id="img7" alt="Wheat Field"></li>
+  <li><img src="https://picsum.photos/id/1081/200/150" id="img8" alt="Countryside"></li>
+  <li><img src="https://picsum.photos/id/1082/200/150" id="img9" alt="Snowy Mountains"></li>
+  <li><img src="https://picsum.photos/id/1083/200/150" id="img10"  alt="Wooden Bridge"></li>
+</ul>
+
+</body>
+<script>[]
+// document.getElementById('img1').onclick = function (){
+//     alert("Image 1 is called");
+// }
+
+// type
+// timestamp
+// defaultprevent
+// target , soruceelement ,clietnX,Clienty
+// altkey ctrlkey shiftkey keycode
+
+// document.getElementById('images').addEventListener('click',function(e){
+//     console.log("clicked");
+// });
+
+// document.getElementById('img1').addEventListener('click',function(e){
+//     console.log("clicked 1");
+//     e.stopPropagation()
+// });
+
+
+// document.getElementById('img2').addEventListener('click',function(e){
+//     e.preventDefault();
+//      e.stopPropagation();
+//      console.log("clicked 122");
+// });
+
+document.querySelector('#images').addEventListener('click',function(e){
+console.log(e.target.parentNode);
+if(e.target.tagName === 'IMG'){
+let remveds = e.target.parentNode;
+remveds.parentNode.removeChild(remveds);
+}
+
+
+});
+
+
+</script>
+
+</html>
